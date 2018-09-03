@@ -116,5 +116,5 @@ USE_TZ = True
 STATIC_URL = '/static/'  # 这个static指的是你在浏览器中直接访问静态文件需要添加的前缀，，比如Http://localhost:8080/static/logo.png
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'staitc')  # 这里的static字符串就是指项目目录中的staitic目录
+    os.path.join(BASE_DIR, 'static')  # 这里的static字符串就是指项目目录中的staitic目录
 ]
