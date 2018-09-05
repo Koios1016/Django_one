@@ -29,12 +29,12 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'django.contrib.admin',     #管理后台站点
-    'django.contrib.auth',      #身份认证系统
-    'django.contrib.contenttypes',  #内容类型框架
-    'django.contrib.sessions',      #会话框架
-    'django.contrib.messages',      #消息框架
-    'django.contrib.staticfiles',   #静态文件管理框架
+    'django.contrib.admin',  # 管理后台站点
+    'django.contrib.auth',  # 身份认证系统
+    'django.contrib.contenttypes',  # 内容类型框架
+    'django.contrib.sessions',  # 会话框架
+    'django.contrib.messages',  # 消息框架
+    'django.contrib.staticfiles',  # 静态文件管理框架
     'polls',
 ]
 
@@ -53,8 +53,7 @@ ROOT_URLCONF = 'mysite.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')]
-        ,
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
