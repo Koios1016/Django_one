@@ -52,8 +52,11 @@ ROOT_URLCONF = 'mysite.urls'
 
 TEMPLATES = [
     {
+        # BACKEND 内置的后端有django.template.backends.django.DjangoTemplates
+        # 和 django.template.backends.jinja2.Jinja2
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [os.path.join(BASE_DIR, 'templates')],
+        #是否进入每个已安装的应用中查找模板,通常为True
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
